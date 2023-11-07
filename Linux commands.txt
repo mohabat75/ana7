@@ -1,0 +1,48 @@
+Linux commands:
+1 echo: Used to print text to the terminal.
+echo "Hello, World!"
+2.ls: List the files and directories in the current directory.
+ls
+3.read: Read input from the user and store it in a variable.
+echo "Enter your name: "
+read name
+echo "Hello, $name!"
+4.cat: Display the content of a file.
+cat filename.txt
+5.touch: Create an empty file
+touch newfile.txt
+6.test: Used for various file and string tests.
+# Check if a file exists
+if [ -f filename.txt ]; then
+    echo "File exists."
+fi
+7.Loops (using for loop as an example):
+for i in {1..5}
+do
+    echo "Iteration $i"
+done
+8. Arithmetic Comparison (using if as an example):
+num1=10
+num2=20
+if [ $num1 -eq $num2 ]; then
+    echo "Numbers are equal."
+else
+    echo "Numbers are not equal."
+fi
+9.Conditional Loops (using while as an example):
+count=1
+while [ $count -le 5 ]
+do
+    echo "Count: $count"
+    ((count++))
+done
+10.grep: Search for a pattern in a file.
+grep "pattern" filename.txt
+11.sed: Stream editor for text manipulation.
+# Replace "old" with "new" in a file
+sed 's/old/new/g' input.txt > output.txt
+
+
+
+
+
